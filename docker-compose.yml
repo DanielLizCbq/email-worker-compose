@@ -37,6 +37,8 @@ services:
       - banco
       - web
       - fila
+    environment: 
+      - DB_NAME=email_sender
     depends_on:
       - db
       - queue
